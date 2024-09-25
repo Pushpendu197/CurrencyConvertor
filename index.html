@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Updated Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Currency Converter</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Currency Converter</h3>
+
+        <form action="">
+            <div class="amount">
+                <p>Enter Amount</p>
+                <input placeholder="Enter the amount " type="number" />
+            </div>
+
+            <!-- DROPDOWN CONTAINER -->
+            <div class="dropdown">
+
+                <!-- from container -->
+                <div class="from">
+                    <p>From:</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/IN/flat/64.png" alt="India Flag">
+                        <select name="from" id="fromCurrency">
+                            <!-- Options will be populated dynamically -->
+                        </select>
+                    </div>
+                </div>
+
+                <div class="exchange">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                </div>
+
+                <div class="to">
+                    <p>To:</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="US Flag">
+                        <select name="to" id="toCurrency">
+                            <!-- Options will be populated dynamically -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="msg">1 USD = 80 INR</div>
+            <div class="exchangeValue">
+                <button type="submit">Get Exchange Rate</button>
+
+            </div>
+        </form>
+    </div>
+
+    <script src="codes.js"></script>
+    <script src="project.js"></script>
+</body>
+
+</html>
